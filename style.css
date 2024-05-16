@@ -2,10 +2,12 @@
     font-family: San Francisco;
     src: url(/Library/Fonts/SF-Mono-Bold.otf);
 }
+
 h1{
     text-align: center;
     padding-top: 5% ;
     color: white    ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p{
