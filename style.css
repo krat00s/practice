@@ -1,0 +1,85 @@
+@font-face {
+    font-family: San Francisco;
+    src: url(/Library/Fonts/SF-Mono-Bold.otf);
+}
+h1{
+    text-align: center;
+    padding-top: 5% ;
+    color: white    ;
+}
+
+p{
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    color: white;
+    
+   
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 10px;
+
+}
+th{
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+td{
+    
+    padding: 10px;
+    padding-bottom: 10px;
+    font-size: medium;
+    text-align: center;
+    
+
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.button-cta {
+    background-color: #660094;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;       
+    margin-bottom: 40px;
+    display: flex;
+    align-self: center;
+    
+}
+
+.button-cta:hover {
+    background-color: #7c0eae;
+    transform: scale(1.05);
+}
+
+.button-cta:active {
+    background-color: #660094;
+    transform: scale(1);
+}
+
+img{
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
