@@ -1,25 +1,38 @@
 @font-face {
-    font-family: San Francisco;
-    src: url(/Library/Fonts/SF-Mono-Bold.otf);
+    font-family: MontserratSemibold;
+    src: url(MontserratSemibold-Yz368.ttf) format('truetype');
 }
-
+@font-face {
+    font-family: MontserratMedium;
+    src: url(MontserratMedium-nRxlJ.ttf) format('truetype');
+}
+@font-face {
+    font-family: MontserratRegular;
+    src: url(MontserratRegular-BWBEl.ttf) format('truetype');
+}
 h1{
     text-align: center;
     padding-top: 5% ;
     color: white    ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: MontserratSemibold;
+    font-weight: 300;
+    font-size: 35px;
+    
 }
+
+
 
 p{
     margin: auto;
     display: block;
     text-align: center;
     padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 14px;
     color: white;
-    
+    font-family: MontserratRegular;
+    text-align: center;
    
 }
 table{
@@ -27,20 +40,33 @@ table{
     margin-right: auto;
     color: white;
     padding: 10px;
+   
+    
 
 }
 th{
     font-weight: bold;
     font-size: x-large;
     padding-bottom: 15px;
+    font-family:  MontserratSemibold;
 }
 td{
+    padding-right: 80px;
+    color: white; 
+    font-weight: bold;
+    font-family:  MontserratMedium;
+}
+td + td{
     
     padding: 10px;
     padding-bottom: 10px;
-    font-size: medium;
+    font-size: 14px;
     text-align: center;
+    font-family:  MontserratMedium;
+    color: white;
+    font-weight: 500;
     
+    border-left: 1px solid white;
 
 }
 
@@ -51,26 +77,27 @@ body{
 
 
 .button-cta {
-    background-color: #660094;
+    background-color: black;
     color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 7px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 2px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: MontserratSemibold;
     margin: auto;       
     margin-bottom: 40px;
-    display: flex;
-    align-self: center;
+    display: block;
+    
     
 }
 
 .button-cta:hover {
-    background-color: #7c0eae;
-    transform: scale(1.05);
+    background-color: white;
+    color: black;
+    
 }
 
 .button-cta:active {
@@ -83,5 +110,27 @@ img{
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    ;
 }
+
+.earthgif {
+    position: relative;
+    display: inline-block;
+}
+
+.earthgif img {
+    display: block;
+}
+
+.earthgif::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Start the gradient at the last quarter */
+    left: 0;
+    width: 100%;
+    height: 50%; /* Cover the last quarter */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    pointer-events: none; /* Ensure the gradient doesn't block interaction with the GIF */
+}
+
 
